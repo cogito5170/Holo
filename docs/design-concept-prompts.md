@@ -218,3 +218,113 @@ Thin leader lines, no text labels.
 2. **치수.** 프롬프트의 cm 값은 형태 지시일 뿐이다. 실제 치수는 플레이트 크기·화면 크기·상 거리에서 계산해 정한다.
 3. **R3(비스듬한 입사)의 정량 조건.** 기억에 근거한 규칙이라 원문과 데이터시트로 확인해야 한다.
 4. **밝기와 대비.** 생성 이미지는 실제보다 밝고 선명하게 그리는 경향이 있다 (추정).
+
+---
+
+## 9. D6 모놀리스 베이스 — 사용자 초안 3종(대표컷·분해도·단면도) 보정판
+
+사용자가 준 초안 세 개(2026-10-12)의 분위기는 유지했다. 블루아워 고층 스튜디오, 건메탈·스모크 글라스, 테크 누아르, 분해도·단면도 구성이다.
+§1 물리 규칙에 어긋나는 부분만 바꿨다.
+
+### 9.1 무엇을 바꿨나
+
+| 초안 표현 | 문제 | 보정 |
+|---|---|---|
+| true volumetric hologram, 여러 깊이의 투명 층 | 공중결상은 화면 한 장을 옮기므로 상은 **평면 한 장**이다 (R1). 360° 입체는 불가능하다 | 평평한 상 카드 1장. 도시 디지털 트윈은 3D 렌더링(음영·원근)으로 입체처럼 보이게 한다 |
+| central volumetric light-field core, circular micro-emitter matrix | 이런 발광부는 이 설계에 없다. 실제로 빛을 내는 것은 **판 아래에 기울어 숨은 화면 한 장**이다 (R2·R3) | 판 아래에 45° 기운 고휘도 패널 + 무광 흑색 광 트랩 공간 |
+| 홀로그램이 emitter field 에서 나오고 빛 산란이 표면과 이어짐 | 공기는 빛을 산란시키지 않는다. 상과 판 사이는 **아무것도 보이지 않는다** (R8) | 이어지는 빛 없음. 매끈한 유리에 상이 희미하게 비치는 정도만 |
+| haptic arrays behind side panels | 옆면에서 수평으로 쏘면 손에 초점이 맺히지 않는다. 손끝까지 막힘 없는 경로가 필요하다 (R6) | 판 둘레 **경사 베벨**에 소자 링을 두고, 위쪽 안으로 향하게 한다. 덮개는 음향 투과 미세 메시 |
+| four corner depth sensors + peripheral ring | 가능하지만 100만 원 예산에서는 과하다 (추정) | 앞 가장자리 적외선 창(손 추적) + 앞 모서리 센서 2개 |
+| 3/4 view 에서 상 전체가 보임 | 상은 판을 통해 보는 방향에서만 보인다 (R4) | 카메라를 정면에서 약 20° 안으로 제한 |
+| low base (높이 미지정) | 판 아래에 화면이 기울어 숨을 깊이가 필요하다 | 높이 약 13 cm (상 높이 약 13 cm 에서 역산한 **추정**) |
+
+**기하 설명:**
+- 화면의 앞 가장자리가 판 바로 아래에 있고, 화면은 뒤로 갈수록 깊이 내려간다 (45°).
+- 그래서 상은 앞 가장자리가 판 바로 위에서 시작해, 뒤로 45° 기대어 선 카드가 된다. 상은 사용자 쪽을 향한다.
+- 화면 대각 약 18 cm 이면 상의 높이는 약 13 cm 이고, 같은 깊이가 받침 안에 필요하다 (추정).
+
+### 9.2 대표컷 (보정판)
+
+```text
+Photorealistic industrial design visualization of a premium near-future mid-air display, shown in a cinematic high-rise technology studio overlooking a city at dusk.
+
+The device is a low rectangular monolithic base, about 40 cm wide, 30 cm deep and 13 cm tall, with softly rounded corners and a wide, stable footprint.
+Its upper surface is seamless smoked-black glass; set flush in its centre is a square aerial imaging plate about 20 x 20 cm, a dark glass-like plate whose extremely fine micro-mirror grid is visible only up close.
+The lower chassis is precision-machined gunmetal aluminium with extremely fine joints and no visible screws.
+
+Visible details: a narrow angled bevel around the plate holds a ring of small round ultrasonic transducers behind an acoustically transparent fine black mesh, facing upward and inward toward the floating image;
+a thin dark infrared window along the front edge for hand tracking; two small depth-sensor lenses at the front corners; narrow ventilation slots along the sides;
+a thin champagne-amber status line around the lower edge; a discreet recessed red emergency-stop button on the right side; a recessed rear port panel (not in view).
+
+Floating above the plate is a single flat, crisp, luminous image plane about 18 cm wide: its front edge starts just above the plate and it leans back about 45 degrees, facing the viewer, like a sheet of light with no frame.
+It shows a shaded 3D render of a futuristic city digital twin with a softly glowing spherical core, fine architectural wireframes and thin orbital data paths, so the content reads as three-dimensional, but the image itself is one flat card in the air.
+The dark plate is visible behind the image as its backdrop, and a faint reflection of the image appears on the glossy glass. Nothing connects the image to the plate: no beam, no light cone, no fog, no particles.
+
+Camera: three-quarter front view from slightly above, about 20 degrees off the front axis, so the floating image is fully visible while the footprint, top plate, transducer bevel, sensor windows and side vents are also seen.
+
+Luxury near-future corporate futurism, dark tech minimalism, restrained tech noir, premium in-house industrial design, realistic engineering details, believable assembly logic,
+gunmetal, graphite, smoked glass, cool white image lines and restrained champagne-amber highlights.
+Cinematic blue-hour lighting, panoramic city skyline, floor-to-ceiling glass, polished dark desk, architectural indirect lighting, high-end editorial product photography, extremely detailed, physically coherent materials.
+```
+**Negative / Avoid:**
+```text
+volumetric 360-degree hologram, multiple floating layers, light cone, projector beam, glowing fog, particles rising from the device, image visible from the side or back,
+box-shaped cabinet, arcade machine, gaming aesthetic, excessive neon, rainbow colors, magical effects, Iron Man-style interface clutter,
+people, logos, brand names, readable text, watermark, exposed wires
+```
+- 비율: `--ar 16:9` · Midjourney 는 `--style raw`
+
+### 9.3 분해도 (보정판)
+
+```text
+Exploded axonometric technical visualization of a premium near-future mid-air display, isometric three-quarter view.
+
+Separate the device vertically into clearly spaced, aligned layers, from top to bottom:
+smoked-glass top panel with a square central opening,
+square aerial imaging plate with a fine micro-mirror grid,
+angled bevel ring carrying small round ultrasonic transducers, with its thin driver board and fine acoustic mesh cover,
+front infrared hand-tracking module and two small corner depth sensors,
+matte-black light-trap cavity shaped as a wedge,
+high-brightness display panel mounted at 45 degrees in a slim carrier, with a thin louver film on its face,
+microcontroller board, compute module and power-management board arranged horizontally,
+graphite heat-spreader plate with passive cooling fins,
+structural magnesium frame,
+machined gunmetal lower enclosure,
+rear power and data interface module, and a small red emergency-stop switch module.
+
+Above the separated components, show the resulting floating image as one flat luminous card leaning back about 45 degrees, displaying a shaded wireframe city around a softly glowing spherical core.
+Use precise engineering proportions, clean component alignment and thin leader lines without text labels. Every component should look manufacturable and mechanically connected.
+
+Neutral dark-grey studio background, soft technical lighting, graphite and gunmetal materials, transparent glass layers, restrained white and amber illumination, premium industrial design presentation.
+```
+**Negative / Avoid:** 대표컷과 같은 목록에 `decorative sci-fi clutter, weapons`를 더한다.
+- 비율: `--ar 4:5`
+
+### 9.4 단면도 (보정판)
+
+```text
+Cutaway cross-section of a premium desktop mid-air display, showing its complete internal optical, sensing, processing and cooling architecture.
+
+One half of the enclosure remains intact while the other half is cleanly sectioned away, revealing:
+the flush aerial imaging plate in the top surface;
+directly beneath it, a wedge-shaped matte-black light-trap cavity holding a high-brightness display tilted at 45 degrees, its front edge just under the plate;
+the angled bevel with ultrasonic transducers and their driver board;
+the front infrared hand-tracking module; the microcontroller, compute and power boards lying flat at the bottom;
+a graphite heat spreader with passive fins; the magnesium frame; the gunmetal enclosure with realistic wall thicknesses and hidden fasteners.
+
+Above the plate, the floating image is one flat luminous card leaning back about 45 degrees, mirror-symmetric to the hidden display across the plate,
+showing a shaded wireframe city around a softly glowing spherical core.
+Inside the cutaway only, a few hair-thin dotted lines trace light from the display up through the plate to the image, and a few faint dotted lines converge from the transducers to a point at the image;
+no visible beam or cone outside the device.
+
+Cinematic technical visualization, dark neutral background, controlled white and champagne-amber highlights, extremely detailed, plausible industrial design.
+```
+**Negative / Avoid:** 대표컷과 같은 목록.
+- 비율: `--ar 3:2`
+
+### 9.5 이 보정판으로도 남는 한계
+
+1. 공중결상 플레이트 20 × 20 cm 의 가격·공급은 아직 확인하지 않았다. 예산 100만 원에 들어오지 않을 수 있다 (§8).
+2. 판 둘레 소자 링은 성긴 배열이라, 8×8 정사각 배열보다 초점이 약하고 부엽이 클 수 있다 (추정). 모델로 다시 계산해야 한다.
+3. 블루아워처럼 어두운 장면에서는 상이 실제보다 잘 보인다. 500 lux 사무실에서는 더 어둡게 보일 것이다 (R5).
+4. 여러 깊이의 층을 꼭 원하면 화면 두 장 + 빔 결합기로 **상 평면 두 장**을 서로 다른 높이에 띄우는 방식은 물리적으로 가능하다 (기억 수준). 다만 부품과 비용이 늘어난다.
