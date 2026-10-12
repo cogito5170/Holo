@@ -60,6 +60,7 @@ prototype/
   enclosure/
   test-data/
 docs/
+  spec.md                     # 시스템 스펙 (요구사항·인터페이스·일정)
   safety-checklist.md
   demo-script.md
   final-report.md
