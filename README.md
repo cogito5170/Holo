@@ -61,7 +61,8 @@ prototype/
   test-data/
 docs/
   spec.md                     # 시스템 스펙 (요구사항·인터페이스·일정)
-  visual-prompts.md           # 완성 모습 이미지 생성 프롬프트 (컨셉 렌더용)
+  design-concept-prompts.md   # 비박스형 디자인 시안 프롬프트 (물리 규칙 포함)
+  visual-prompts.md           # (보류) 박스형 컨셉 렌더 프롬프트
   safety-checklist.md
   demo-script.md
   final-report.md
