@@ -61,6 +61,7 @@ prototype/
   test-data/
 docs/
   spec.md                     # 시스템 스펙 (요구사항·인터페이스·일정)
+  visual-prompts.md           # 완성 모습 이미지 생성 프롬프트 (컨셉 렌더용)
   safety-checklist.md
   demo-script.md
   final-report.md
